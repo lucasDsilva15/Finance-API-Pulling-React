@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.homepage{
+  display: flex;
+  background-color: rgb(29, 179, 179);
+  flex-wrap: wrap;
+  
+}
+.coindata{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 31vw;
+  font-size: 20px;
+  border: 1px solid rgba(0, 255, 255, 0.3)  ;
+  padding: 10px
+}
+#loading{
+  text-align: center;
+}
