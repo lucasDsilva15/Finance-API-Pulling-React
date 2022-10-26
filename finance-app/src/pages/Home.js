@@ -1,7 +1,9 @@
 import { useEffect } from "react"
+import { useNavigate } from "react-router-dom"
 import Coindata from "../components/Coindata"
 
-export default function Home ({coin, setCoin, handleFetch, options, }) {
+export default function Home ({coin, handleFetch }) {
+   const navigate = useNavigate()
     useEffect(()=> {
         handleFetch()
     }, [])
@@ -12,6 +14,7 @@ export default function Home ({coin, setCoin, handleFetch, options, }) {
                         return(
                         <div className="coindata" key={c.uuid}>
                             <Coindata coindata={c}/>
+                            <button id='arrow' onClick={()=> navigate(`/${c.uuid}`) }>More Info</button>
                             </div>
                         )
                     })}

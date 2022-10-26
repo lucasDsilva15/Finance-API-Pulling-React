@@ -6,17 +6,25 @@
   display: flex;
   background-color: rgb(29, 179, 179);
   flex-wrap: wrap;
+  width: 100vw
   
 }
 .coindata{
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  width: 31vw;
   font-size: 20px;
   border: 1px solid rgba(0, 255, 255, 0.3)  ;
-  padding: 10px
+  padding: 10px;
+  min-width: 31vw;
+  max-width: 50vw;
 }
 #loading{
   text-align: center;
+}
+#coinstats{
+  display: flex;
+  flex-direction: column;
+}
+a{
+  width: fit-content;
 }

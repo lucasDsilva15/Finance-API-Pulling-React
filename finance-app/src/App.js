@@ -3,12 +3,12 @@ import { useState } from 'react';
 import './App.css';
 import {Routes, Route} from 'react-router-dom'
 import Home from './pages/Home';
-import Showstock from './pages/Showstock';
-import News from './pages/News';
+import Showcoin from './pages/Showcoin';
+import About from './pages/About';
+import Nav from './components/Nav';
 
 function App() {
   let [coin, setCoin] = useState()
-  let [param, setParam] = useState()
   const options = {
     method: 'GET',
     url: 'https://coinranking1.p.rapidapi.com/coins',
@@ -38,16 +38,14 @@ const handleFetch = () => {
 
   return (
     <div className="App">
+      <Nav/>
       <Routes>
         <Route path='/' element={<Home 
         coin={coin}
-        setCoin={setCoin}
         handleFetch={handleFetch}
-        options={options}
-        param={param}
-        setParam={setParam}/>}/>
-        <Route path='/:id' element={<Showstock/>}/>
-        <Route path='/news' element={<News/>}/> 
+        />}/>
+        <Route path='/:id' element={<Showcoin/>}/>
+        <Route path='/about' element={<About/>}/> 
       </Routes>
     </div>
   );
