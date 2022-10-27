@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import { Container } from "react-bootstrap"
 import { useNavigate } from "react-router-dom"
 import Coindata from "../components/Coindata"
 
@@ -9,17 +10,19 @@ export default function Home ({coin, handleFetch }) {
     }, [])
     const loaded = () => {
         return(
-            <div className="homepage">
+            <Container>
+                <div className="basic-grid">
                     {coin.data.coins.map((c)=> {
                         return(
-                        <div className="coindata" key={c.uuid}>
+                        <div key={c.uuid}>
                             <Coindata coindata={c}/>
-                            <button id='arrow' onClick={()=> navigate(`/${c.uuid}`) }>More Info</button>
                             </div>
                         )
                     })}
                 
-            </div>
+            </div> 
+            </Container>
+           
         )
     }
     const loading = () => {
