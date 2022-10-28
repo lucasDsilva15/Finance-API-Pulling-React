@@ -1,15 +1,18 @@
 import { useEffect } from "react"
 import { Container } from "react-bootstrap"
-import { useNavigate } from "react-router-dom"
 import Coindata from "../components/Coindata"
 
 export default function Home ({coin, handleFetch }) {
-   const navigate = useNavigate()
     useEffect(()=> {
         handleFetch()
     }, [])
     const loaded = () => {
         return(
+            <>
+            <div id='webbannerdiv'>
+            <img id='webbanner' src='https://en.expensereduction.com/wp-content/uploads/2019/01/Blockchain-Webpage-Banner.jpg' alt='web banner'/>
+
+            </div>
             <Container>
                 <div className="basic-grid">
                     {coin.data.coins.map((c)=> {
@@ -22,7 +25,7 @@ export default function Home ({coin, handleFetch }) {
                 
             </div> 
             </Container>
-           
+            </>
         )
     }
     const loading = () => {

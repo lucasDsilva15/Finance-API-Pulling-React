@@ -28,7 +28,6 @@ a{
 .titlerow{
   display: flex;
     width: 100%;
-    max-width: 50%;
     margin: 0 auto;
     justify-content: center;
 }
@@ -50,4 +49,9 @@ a{
   display: grid;
   gap:10px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+#webbanner{
+  margin-left: 50%;
+transform: translateX(-60%);
+width: auto;
 }
