@@ -6,12 +6,14 @@ export default function Coindata({coindata}) {
     return(
         <>
         <div className="coindata">
-            <span> Name: {coindata.name}</span> <br/>
-            <span> Symbol: {coindata.symbol}</span> <br/>
-            <span> Price: ${price} </span> <br/>
+            <span> Name: {coindata.name}</span> 
+            <span> Symbol: {coindata.symbol}</span> 
+            <span> Price: ${price} </span> 
             <br/>
         </div>
-        <button id='arrow' onClick={()=> navigate(`/${coindata.uuid}`) }>More Info</button>
+        <div className="arrowcontainer">
+             <p id='arrow' onClick={()=> navigate(`/${coindata.uuid}`) }><i class="arrow right"></i></p>
+        </div>
         </>
         
     )

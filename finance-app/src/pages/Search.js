@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import Searchbar from "../components/Searchbar"
 import Searchresults from "../components/Searchresults"
 import axios from "axios"
 import { Col, Container, Row } from "react-bootstrap"
@@ -54,7 +53,6 @@ useEffect(() => {
         </form>  
             </Container>
         
-            {/* <Searchbar search={search} setSearch={setSearch} handleChange={handleChange}/> */}
         {results && (
             results.data.coins.map((data) => {
                 

@@ -13,11 +13,12 @@ export default function Home ({coin, handleFetch }) {
             <img id='webbanner' src='https://en.expensereduction.com/wp-content/uploads/2019/01/Blockchain-Webpage-Banner.jpg' alt='web banner'/>
 
             </div>
-            <Container>
+            <div className="homepage">
+            <Container className="homecontainer">
                 <div className="basic-grid">
                     {coin.data.coins.map((c)=> {
                         return(
-                        <div key={c.uuid}>
+                        <div key={c.uuid} className='infocontainer'>
                             <Coindata coindata={c}/>
                             </div>
                         )
@@ -25,6 +26,7 @@ export default function Home ({coin, handleFetch }) {
                 
             </div> 
             </Container>
+            </div>
             </>
         )
     }
