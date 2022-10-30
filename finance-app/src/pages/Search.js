@@ -41,7 +41,7 @@ useEffect(() => {
 
 
     return(
-        <Container fluid>
+        <Container fluid className="searchstyle">
             <Col>
             <Row>
                <h1 className="titlerow"> Use this page to search for coins </h1> 
@@ -53,13 +53,22 @@ useEffect(() => {
         </form>  
             </Container>
         
-        {results && (
+        {results ? (
             results.data.coins.map((data) => {
-                
                 return(
-                    <Searchresults key={data.uuid} data={data}/>
+                    <div id='searchresultscontainer'>
+                        <Searchresults key={data.uuid} data={data}/>
+                    </div>
+                    
                 )
             })
+        ) : (
+            (
+                <div id='loading'>
+                    <h1 className="titlerow"> Loading...</h1>
+                </div>
+                
+            )
         )}  
             </Col>
           

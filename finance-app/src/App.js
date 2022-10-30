@@ -18,7 +18,7 @@ function App() {
       timePeriod: '24h',
       orderBy: 'marketCap',
       orderDirection: 'desc',
-      limit: '51',
+      limit: '100',
       offset: '0'
     },
     headers: {
@@ -49,7 +49,6 @@ const handleFetch = () => {
         <Route path='/about' element={<About/>}/> 
         <Route path='/search' element={<Search/>}/>
       </Routes>
-      <Footer/>
     </div>
   );
 }

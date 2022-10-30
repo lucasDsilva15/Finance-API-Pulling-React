@@ -4,9 +4,11 @@ export default function Nav () {
     
     return(
         <div id='navbar'>
-            <Link to="/"> Home </Link>
-            <Link to='/about'> About </Link>
-            <Link to='/search'> Search</Link>
+            <div id="navbar-items">
+                <Link to="/" className="navlink"> Home </Link>
+                <Link to='/about' className='navlink'> About </Link>
+                <Link to='/search' className='navlink'> Search</Link>    
+            </div>
         </div>
         
     )

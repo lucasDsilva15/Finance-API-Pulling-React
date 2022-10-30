@@ -4,6 +4,7 @@ import { Row, Col, Container} from 'react-bootstrap'
 export default function About () {
     return(
         <>
+        <div className='coinshowpage aboutpagestyle'>
             <Container>
                 <Row>
                     <Col>
@@ -11,7 +12,7 @@ export default function About () {
                         <p> 
                             Crypto Coinnoseur is a financial web application that can generate, data on all cyrptocurrencies
                             in our database. We specialize in providing high volumes of detail to each coin, while summarizing
-                            key topics about the coin. We have a large coin database with over 20,000 coins. Our home page is the top 51 coins
+                            key topics about the coin. We have a large coin database with over 20,000 coins. Our home page is the top 100 coins
                             based on ranking which is determined by coinranking.com. If you ever need more details on a specific coin we also have
                             links to take you to multiple sites with additional information on each coin.
                         </p>
@@ -40,6 +41,8 @@ export default function About () {
                 </Row>
             
             </Container>
+        </div>
+            
         </>
         
     )

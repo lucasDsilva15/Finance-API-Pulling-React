@@ -18,9 +18,22 @@
 #loading{
   text-align: center;
 }
-#coinstats{
+.coinstats{
   display: flex;
   flex-direction: column;
+  width: fit-content;
+  color: rgb(208, 117, 224);
+  padding-top: 15px;
+}
+.coindescription{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(208, 117, 224);
+}
+.coinshowpage{
+  background-color: #21222a;
 }
 a{
   width: fit-content;
@@ -30,6 +43,7 @@ a{
     width: 100%;
     margin: 0 auto;
     justify-content: center;
+    padding: 20px;
 }
 .centersearch{
   display: flex;
@@ -39,10 +53,15 @@ a{
     justify-content: center;
     flex-direction: column;
 }
-#searchresultlink:hover{
-  cursor: pointer;
+.searchresultlink{
+  font-size: 30px;
+  transition: font-size 400ms ease;
 }
-#searchresultlink{
+.searchresultlink:hover{
+  cursor: pointer;
+  font-size: 50px;
+}
+.searchresultlink{
   width: fit-content;
 }
 .basic-grid{
@@ -61,11 +80,6 @@ width: auto;
   display: inline-block;
   padding: 3px;
 }
-/* .buttonarrow{
-  display: flex;
-  justify-content: flex-end;
-  width: 
-} */
 .infocontainer{
   display: flex;
   border: solid 1px rgba(65, 151, 202, .6);
@@ -88,3 +102,37 @@ width: auto;
   display: flex;
   justify-content: flex-end;
 }
+.aboutpagestyle{
+  color: rgb(208, 117, 224);
+  font-size: 22px;
+  padding: 20px
+}
+.searchstyle{
+  background-color: #21222a;
+  color:rgb(208, 117, 224)
+}
+#navbar{
+  display: flex;
+  height: 3rem;
+  font-size: 25px;
+  background-color: #5e548e;
+  
+}
+.navlink{
+  text-decoration: none;
+  color: #21222a;
+  padding: 10px;
+  transition: opacity 400ms ease
+}
+#navbar-items:hover > .navlink{
+  opacity: 0.2;
+  color:#21222a
+}
+#navbar-items:hover > .navlink:hover {
+  opacity: 1;
+  color: #21222a;
+}
+#loading{
+  height: 100vh;
+}
+
