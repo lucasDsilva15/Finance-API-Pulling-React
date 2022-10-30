@@ -5,6 +5,7 @@ import Coindata from "../components/Coindata"
 export default function Home ({coin, handleFetch }) {
     useEffect(()=> {
         handleFetch()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     const loaded = () => {
         return(
