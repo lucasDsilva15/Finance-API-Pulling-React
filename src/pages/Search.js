@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import Searchresults from "../components/Searchresults"
 import axios from "axios"
-import { Col, Container, Row } from "react-bootstrap"
+import { Col, Row } from "react-bootstrap"
 
 export default function Search () {
     
@@ -42,17 +42,18 @@ useEffect(() => {
 
 
     return(
-        <Container fluid className="searchstyle">
+        <div className="searchstyle"> 
+        
             <Col>
             <Row>
                <h1 className="titlerow"> Use this page to search for coins </h1> 
             </Row>  
-            <Container fluid>
+            
               <form className="centersearch">
             <label htmlFor="search"> Search: </label>
             <input id='search' type='text' value={search} onChange={handleChange}/>
         </form>  
-            </Container>
+            
         
         {results ? (
             results.data.coins.map((data) => {
@@ -73,7 +74,7 @@ useEffect(() => {
         )}  
             </Col>
           
-        </Container>
+        </div>
         
         
     )
