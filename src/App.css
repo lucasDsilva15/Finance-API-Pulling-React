@@ -56,12 +56,12 @@ a{
     flex-direction: column;
 }
 .searchresultlink{
-  font-size: 30px;
+  font-size: 40px;
   transition: font-size 400ms ease;
 }
 .searchresultlink:hover{
   cursor: pointer;
-  font-size: 50px;
+  font-size: 60px;
 }
 .searchresultlink{
   width: fit-content;
@@ -72,8 +72,6 @@ a{
   gap: 3px
 }
 #webbanner{
-  
-
 width: 100vw;
 }
 .arrow {
