@@ -6,7 +6,6 @@ import Home from './pages/Home';
 import Showcoin from './pages/Showcoin';
 import About from './pages/About';
 import Nav from './components/Nav';
-import Footer from './components/Footer'
 import Search from './pages/Search';
 function App() {
   let [coin, setCoin] = useState()
