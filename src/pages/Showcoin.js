@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import parse from "html-react-parser";
 import Coinlinks from "../components/Coinlinks";
 import { Container, Row, Col } from "react-bootstrap";
-export default function Showcoin({}) {
+export default function Showcoin() {
   const params = useParams();
   const id = params.id;
   let [thisCoin, setThisCoin] = useState();
@@ -32,6 +32,7 @@ export default function Showcoin({}) {
 
   useEffect(() => {
     fetchData();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const loading = () => {
