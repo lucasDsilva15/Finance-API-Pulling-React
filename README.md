@@ -16,6 +16,10 @@ To access the site you are able to use this link https://ubiquitous-mochi-91b4d6
 
 I used several different GET methods from this site https://rapidapi.com/Coinranking/api/coinranking1 which provided the API'S
 
+## Future Updates
+
+There are a few styling issues that are apparent right now that I would like to finish up. Not only that but also maybe a styling overhaul that is a lot more reactive to user inputs such as onclick's hovers etc. Also having a search bar implemented into the nav bar instead of its own seperate page would seem to make more sense and be more user friendly. Also being able to have charts for each coin that will show crypto currency price history would be very helpful for those attempting to use this site to make informed decissions on investments!
+
 ## License 
 
 MIT License
